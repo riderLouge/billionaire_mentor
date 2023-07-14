@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LastWeekData from './Components/LastweekData';
+import Home from './Components/Home';
+import Login from './Components/Login';
+import AboutUs from './Components/AboutUs';
+import Pricing from './Components/Pricing';
+import RegistrationPage from './Components/Registration';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/last-week-data" element={<LastWeekData />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Pricing" element={<Pricing />} />
+        <Route path="/Registration" element={<RegistrationPage />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

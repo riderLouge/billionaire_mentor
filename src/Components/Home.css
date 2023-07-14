@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.Home {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0e0f12;
+}
+
+.Home-header {
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-info {
+  display: flex;
+  align-items: center;
+}
+
+.App-name {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+  margin-right: 45px;
+  margin-left: 70px;
+}
+
+.App-info label {
+  margin: 0;
+  color: #678cb0;
+  margin-right: 25px;
+  font-weight: 500; 
+  padding-top: 8px;
+  font-size: 16px;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.App-info label:hover {
+  color: #61dafb; /* Define the hover color */
+}
+
+.LoginRegisterWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.TextInput {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  width: 300px;
+}
+
+.LoginRegisterButton {
+  background-color: #61dafb;
+  color: #fff;
+  font-size: 18px; /* Adjust the font size as desired */
+  padding: 10px 20px; /* Adjust the padding as desired */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.LoginRegisterButton:hover {
+  background-color: #45b8d8;
+}
+
+.Bottom-section {
+  background-color: #08090a;
+  padding-bottom: 54px;
+  color: #fff;
+}
+
+.Bottom-topics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Topic {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.Topic h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: left;
+  margin-left: 97px;
+  font-weight: 500;
+}
+
+.Topic ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.Topic li {
+  margin-bottom: 5px;
+  color: #678cb0;
+  font-size: 14px;
+}
+
+
+.hover-color {
+  color: #61dafb; /* Replace with your desired hover color */
+}
+
+.default-color {
+  color: #678cb0; /* Replace with the else part color (#678cb0) */
+}
+
+.Body-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.right-content {
+  flex: 1;
+}
+
+
+.footer {
+  margin-top: auto;
+  height: 200px;
+}
+
+.hover-label {
+  color: #678cb0;
+  transition: color 0.3s;
+}
+
+.hover-label:hover {
+  color: #61dafb;
+  cursor: pointer;
+}
+
+
+
+
